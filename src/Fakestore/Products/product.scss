@@ -1,0 +1,65 @@
+// If you're including all the styles for Carbon
+@use "@carbon/styles";
+
+// Or if you're wanting to use just the grid
+@use "@carbon/styles/scss/grid";
+
+@use "@carbon/layout";
+// Emit the flex-grid styles
+@include grid.flex-grid();
+
+.img1 {
+  mix-blend-mode: multiply;
+  filter: contrast(1);
+  height: 200px;
+  width: 200px;
+}
+
+.items {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: layout.$spacing-10;
+}
+
+.search-box {
+  border: 1px solid;
+  margin-bottom: layout.$spacing-10;
+}
+
+.imagem {
+  width: 10;
+  height: 10;
+}
+
+.modals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-buyNow {
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: layout.$spacing-07;
+}
+
+.cart-body {
+  min-height: 66vh;
+}

@@ -1,0 +1,53 @@
+@use "@carbon/styles/scss/grid";
+@use "@carbon/styles";
+@use "@carbon/layout";
+@include grid.flex-grid();
+
+.shopping-cart {
+  color: rgb(21, 23, 23);
+  margin-top: layout.$spacing-10;
+  margin-bottom: layout.$spacing-10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titles {
+  color: brown;
+}
+
+.cartImage {
+  height: 200px;
+  width: 200px;
+}
+
+.cart-item {
+  margin-top: layout.$spacing-10;
+}
+
+.cart-summary {
+}
+
+.cartSummary {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: layout.$spacing-05;
+}
+
+.Table1 {
+  margin-top: layout.$spacing-05;
+}
+
+.btn {
+  margin-left: layout.$spacing-05;
+  margin-right: layout.$spacing-05;
+}
+
+.btn-clear-cart {
+  margin-top: layout.$spacing-05;
+}
+
+.cds--popover {
+  display: none;
+}
