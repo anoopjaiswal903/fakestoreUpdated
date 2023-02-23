@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.items:hover {
+  border: 1px solid black;
+}
+
 .notification {
   display: flex;
   justify-content: center;

@@ -1,100 +1,71 @@
+import {
+  DataTable,
+  TableContainer,
+  TableToolbar,
+  TableBatchAction,
+} from "@carbon/react";
 import React from "react";
 import "./testpage.scss";
 
+import { TrashCan, Save, Download } from "@carbon/icons-react";
+
 function Testpage() {
-  return (
-    <div className="main-div">
-      <div className="grid-system">
-        <div class="cds--grid">
-          <div class="cds--row">
-            <div class="cds--col-lg-3 cds--col-md-2 cds--col-sm-2 col1">a</div>
-            <div class="cds--col-lg-3 cds--col-md-2 cds--col-sm-2 col1">b</div>
-            <div class="cds--col-lg-3 cds--col-md-2 cds--col-sm-2 col1">c</div>
-            <div class="cds--col-lg-3 cds--col-md-2 cds--col-sm-2 col1">d</div>
-            <div class="cds--col-lg-2 cds--col-md-2 cds--col-sm-2 col1">e</div>
-          </div>
-          <div class="cds--row row1">
-            <div class="cds--col-lg-2 cds--col-md-2 cds--col-sm-2 col1">a</div>
-            <div class="cds--col-lg-2 cds--col-md-2 cds--col-sm-2 col1">b</div>
-            <div class="cds--col-lg-5 cds--col-md-2 cds--col-sm-2 col1">c</div>
-            <div class="cds--col-lg-3 cds--col-md-2 cds--col-sm-2 col1">d</div>
-            <div class="cds--col-lg-2 cds--col-md-2 cds--col-sm-2 col1">e</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-16">16</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-15 cds--col-md-7 cds--col-sm-3 col1">
-              15
-            </div>
-            <div class="cds--col-sm-1 cds--col-md-1 cds--col-lg-1 col1">1</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-14 cds--col-md-6 col1">14</div>
-            <div class="cds--col-lg-2 cds--col-md-2 col1">2</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-13 cds--col-md-5 col1">13</div>
-            <div class="cds--col-lg-3 cds--col-md-3 col1">3</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-12 col1">12</div>
-            <div class="cds--col-lg-4 col1">4</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-11 col1">11</div>
-            <div class="cds--col-lg-5 col1">5</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-10 col1">10</div>
-            <div class="cds--col-lg-6 col1">6</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-9 col1">9</div>
-            <div class="cds--col-lg-7 col1">7</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-8 cds--col-md-4 cds--col-sm-2 col1">8</div>
-            <div class="cds--col-lg-8 cds--col-md-4 cds--col-sm-2 col1">8</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-4 cds--col-md-2 cds--col-sm-1 col1">4</div>
-            <div class="cds--col-lg-4 cds--col-md-2 cds--col-sm-1 col1">4</div>
-            <div class="cds--col-lg-4 cds--col-md-2 cds--col-sm-1 col1">4</div>
-            <div class="cds--col-lg-4 cds--col-md-2 cds--col-sm-1 col1">4</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-            <div class="cds--col-lg-2 cds--col-md- col1">2</div>
-          </div>
-          <div class="cds--row">
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1"> col1</div>
-            <div class="cds--col-lg- col1">1</div>
-          </div>
-        </div>
-      </div>
+  const batchActionClick = () => {
+    console.log("click batch is working ");
+  };
+
+  return(
+    <div>
+      
     </div>
-  );
+  )
+  <DataTable>
+    {({
+      rows,
+      headers,
+      getHeaderProps,
+      getRowProps,
+      getSelectionProps,
+      getToolbarProps,
+      getBatchActionProps,
+      onInputChange,
+      selectedRows,
+      getTableProps,
+      getTableContainerProps,
+    }) => {
+      const batchActionProps = getBatchActionProps();
+
+      return (
+        <div>
+          <TableContainer>
+            <TableToolbar {...getToolbarProps()}>
+              <TableBatchAction
+                tabIndex={batchActionProps.shouldShowBatchActions ? 0 : -1}
+                renderIcon={TrashCan}
+                onClick={batchActionClick(selectedRows)}
+              >
+                Delete
+              </TableBatchAction>
+              <TableBatchAction
+                tabIndex={batchActionProps.shouldShowBatchActions ? 0 : -1}
+                renderIcon={Save}
+                onClick={batchActionClick(selectedRows)}
+              >
+                Save
+              </TableBatchAction>
+              <TableBatchAction
+                tabIndex={batchActionProps.shouldShowBatchActions ? 0 : -1}
+                renderIcon={Download}
+                onClick={batchActionClick(selectedRows)}
+              >
+                Download
+              </TableBatchAction>
+            </TableToolbar>
+          </TableContainer>
+        </div>
+      );
+    }}
+  </DataTable>;
 }
 
 export default Testpage;

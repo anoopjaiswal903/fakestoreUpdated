@@ -8,6 +8,8 @@ import Header from "./Header";
 import { Route, Switch } from "react-router-dom";
 import Testpage from "./Testpage/Testpage";
 
+// import { UpdateCartView } from "./Fakestore/Products/UpdateCartView";
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ function App() {
           <Route exact path="/" component={ProductView} />
           <Route path="/cartView" component={CartView} />
           <Route path="/Testpage" component={Testpage} />
+          {/* <Route path="/UpdateCartView" component={UpdateCartView} /> */}
         </Switch>
       </Content>
     </div>

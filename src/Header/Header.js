@@ -42,6 +42,10 @@ function TutorialHeader() {
             <HeaderMenuItem element={Link} to="/testpage">
               Style Test
             </HeaderMenuItem>
+
+            <HeaderMenuItem element={Link} to="/UpdateCartView">
+              UpdateItem
+            </HeaderMenuItem>
           </HeaderNavigation>
 
           <HeaderGlobalBar>

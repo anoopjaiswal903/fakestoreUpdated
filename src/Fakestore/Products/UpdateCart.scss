@@ -1,0 +1,9 @@
+// If you're including all the styles for Carbon
+@use "@carbon/styles";
+
+// Or if you're wanting to use just the grid
+@use "@carbon/styles/scss/grid";
+
+@use "@carbon/layout";
+// Emit the flex-grid styles
+@include grid.flex-grid();
